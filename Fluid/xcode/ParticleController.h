@@ -17,15 +17,16 @@
 #endif /* defined(__Fluid__ParticleController__) */
 
 class ParticleController {
-  public:
+public:
     ParticleController();
     
-    void update( const ci::Vec2i &windowSize );
+    void update( const ci::Vec2i &windowSize, float gravity, float neighborhood );
     void draw();
     
     void addParticles( int amt );
     
     void applyGravity( float gravity );
+    void applyViscosity( float neighborhood );
     
     int mNumParticles;
     std::list<Particle>	mParticles;

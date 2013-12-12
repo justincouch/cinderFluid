@@ -18,7 +18,7 @@
 #endif /* defined(__Fluid__Particle__) */
 
 class Particle {
-  public:
+public:
     Particle();
     
     void update( const ci::Vec2i &windowSize );

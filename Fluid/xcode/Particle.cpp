@@ -19,7 +19,7 @@ Particle::Particle()
     float y = Rand::randFloat( app::getWindowHeight() );
     
     mPos = Vec2f( x, y );
-    mVel = Rand::randVec2f();
+    mVel = Rand::randVec2f() * 1.0f;
     mAcc = Vec2f::zero();
     
     mRadius = 1.0f;

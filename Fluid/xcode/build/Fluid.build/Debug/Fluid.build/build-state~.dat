@@ -2,12 +2,12 @@ TFluid
 v5
 r1
 cCheck dependencies
-cProcessInfoPlistFile /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist Info.plist
+cProcessInfoPlistFile /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist Info.plist
 cCpResource ../resources/CinderApp.icns ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
-cProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-gihezbjlkezbvkempxcstrutktma/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o /Users/Tellart/Documents/cinder/Fluid/xcode/../src/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386
-cTouch /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app
+cProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386
+cTouch /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
 c000000005130312F00000000000000AA
@@ -59,58 +59,6 @@ c00000000526800F600000000004B9FB0
 t1382547702
 s4956080
 
-N/Users/Tellart/Documents/cinder/Fluid/xcode/../resources/CinderApp.icns
-c0000000052A782B30000000000070375
-t1386709683
-s459637
-
-N/Users/Tellart/Documents/cinder/Fluid/xcode/../src/FluidApp.cpp
-c0000000052A7836800000000000002F1
-t1386709864
-s753
-
-N/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app
-t2
-s0
-
-N/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist
-t2
-s0
-
-N/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid
-t2
-s0
-
-N/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/PkgInfo
-t2
-s0
-
-N/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
-t2
-s0
-
-N/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Fluid.LinkFileList
-c0000000052A783680000000000000071
-t1386709864
-s113
-
-N/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o
-t2
-s0
-
-N/Users/Tellart/Documents/cinder/Fluid/xcode/Fluid_Prefix.pch
-c0000000052A782B3000000000000012D
-t1386709683
-s301
-i<Cocoa/Cocoa.h>
-i"cinder/Cinder.h"
-i"cinder/app/AppBasic.h"
-i"cinder/gl/gl.h"
-i"cinder/CinderMath.h"
-i"cinder/Matrix.h"
-i"cinder/Vector.h"
-i"cinder/Quaternion.h"
-
 N/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Cinder.h
 c0000000051780B7C0000000000000CEB
 t1366821756
@@ -146,84 +94,136 @@ c0000000051780B7E0000000000006469
 t1366821758
 s25705
 
-N/var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-gihezbjlkezbvkempxcstrutktma/Fluid_Prefix.pch.pth
+N/Users/Tellart/cinderFluid/Fluid/xcode/../resources/CinderApp.icns
+c0000000052A9E3590000000000070375
+t1386865497
+s459637
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp
+c0000000052A9E35900000000000001FA
+t1386865497
+s506
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Fluid.LinkFileList
+c0000000052A9E378000000000000006C
+t1386865528
+s108
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/Fluid_Prefix.pch
+c0000000052A9E359000000000000012D
+t1386865497
+s301
+i<Cocoa/Cocoa.h>
+i"cinder/Cinder.h"
+i"cinder/app/AppBasic.h"
+i"cinder/gl/gl.h"
+i"cinder/CinderMath.h"
+i"cinder/Matrix.h"
+i"cinder/Vector.h"
+i"cinder/Quaternion.h"
+
+N/var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth
 t2
 s0
 
 NInfo.plist
-c0000000052A782B30000000000000462
-t1386709683
+c0000000052A9E3590000000000000462
+t1386865497
 s1122
 
-CBuild AST from /Users/Tellart/Documents/cinder/Fluid/xcode/../src/FluidApp.cpp
+CBuild AST from /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp
 r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies835254e8ba57b841^db8a79e8ba57b841^---0#1#0#--18"Check dependencies36"6C790C36-FF6F-48B0-8502-DEBF0130A1BA-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesf3541ff81a5ab841^bd5438f81a5ab841^---0#1#0#--18"Check dependencies36"28F92373-4DFF-48B7-8F7D-2A4FE6F9A43B-
 
-CCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o /Users/Tellart/Documents/cinder/Fluid/xcode/../src/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s408402672.478773
-e408402674.611384
+CCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s408558343.732608
+e408558345.942558
 r1
 xCompileC
 x./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o
-x/Users/Tellart/Documents/cinder/Fluid/xcode/../src/FluidApp.cpp
+x/Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp
 xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/Tellart/Documents/cinder/Fluid/xcode/../src/FluidApp.cpp89ce7af0ba57b841^66839cf2ba57b841^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/Tellart/Documents/cinder/Fluid/xcode/../src/FluidApp.cpp0000000000000000^2765"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o ../src/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/Documents/cinder/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/Documents/cinder/Fluid/xcode/build/Debug/include -I../../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/Documents/cinder/Fluid/xcode/build/Debug -include /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-gihezbjlkezbvkempxcstrutktma/Fluid_Prefix.pch -MMD -MT dependencies -MF /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.d --serialize-diagnostics /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.dia -c /Users/Tellart/Documents/cinder/Fluid/xcode/../src/FluidApp.cpp -o /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o36"F1C3DE93-A00F-49CB-A9CD-B1DC8EB21413-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp21afbb071b5ab841^a758f1091b5ab841^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp0000000000000000^2694"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o ../src/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/include -I../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -include /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch -MMD -MT dependencies -MF /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.d --serialize-diagnostics /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.dia -c /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp -o /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o36"10A638D3-C988-486F-AA3A-03FB59BE8917-
 
 CCpResource ../resources/CinderApp.icns ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
-s408402664.561601
-e408402664.581494
+s408558328.266046
+e408558328.277895
 r1
 xCpResource
 x../resources/CinderApp.icns
 x./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icnsb1df8fe8ba57b841^f7e994e8ba57b841^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns000000000080d041^419"CpResource ../resources/CinderApp.icns ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns    cd /Users/Tellart/Documents/cinder/Fluid/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Tellart/Documents/cinder/Fluid/xcode/../resources/CinderApp.icns /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/Resources36"AF52B2D6-B7F4-4C1B-90D6-908D5A32D0CC-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns66fa45f81a5ab841^fb2447f81a5ab841^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns000000000080d041^404"CpResource ../resources/CinderApp.icns ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns    cd /Users/Tellart/cinderFluid/Fluid/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Tellart/cinderFluid/Fluid/xcode/../resources/CinderApp.icns /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Resources36"274169B1-BA6E-44B5-A8C9-67348BDE21DE-
 
-CLd /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386
-s408402674.618638
-e408402678.950131
+CLd /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386
+s408558345.950275
+e408558350.012538
 r1
 xLd
-x/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid
+x/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid
 xnormal
 xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Link /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluidfe7d9ef2ba57b841^4f3cf3f6ba57b841^---0#0#0#--981"Ld ./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386    cd /Users/Tellart/Documents/cinder/Fluid/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/Tellart/Documents/cinder/Fluid/xcode/build/Debug -F/Users/Tellart/Documents/cinder/Fluid/xcode/build/Debug -filelist /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Fluid.LinkFileList -mmacosx-version-min=10.7 -dead_strip ../../../../Downloads/cinder_0.8.5_mac/lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework CoreVideo -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid36"F58485E1-C897-4CC6-886A-2C9A359F0218-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Link /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid5661f3091b5ab841^5936030e1b5ab841^---0#0#0#--953"Ld ./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -filelist /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Fluid.LinkFileList -mmacosx-version-min=10.7 -dead_strip ../../../Downloads/cinder_0.8.5_mac/lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework CoreVideo -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid36"33907763-1C03-4CE6-9993-E75A5D899963-
 
-CProcessInfoPlistFile /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist Info.plist
-s408402664.523182
-e408402664.551446
+CProcessInfoPlistFile /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist Info.plist
+s408558328.236815
+e408558328.241667
 r1
 xProcessInfoPlistFile
-x/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist
+x/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist
 xInfo.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist6b1086e8ba57b841^eb1a8de8ba57b841^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/Tellart/Documents/cinder/Fluid/xcode/Info.plist0000000000000000^393"ProcessInfoPlistFile ./build/Debug/Fluid.app/Contents/Info.plist Info.plist    cd /Users/Tellart/Documents/cinder/Fluid/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist36"EC3903C6-A4AA-4664-A418-13CD1E7A494A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist26c43cf81a5ab841^f2d23df81a5ab841^---0#0#0#-19%DVTDocumentLocation2@65"file://localhost/Users/Tellart/cinderFluid/Fluid/xcode/Info.plist0000000000000000^378"ProcessInfoPlistFile ./build/Debug/Fluid.app/Contents/Info.plist Info.plist    cd /Users/Tellart/cinderFluid/Fluid/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist36"B43B0534-61A4-48E9-B9A2-0D7CF60FA1C7-
 
-CProcessPCH++ /Users/Tellart/Library/Developer/Xcode/DerivedData/Fluid-fuovbqxcjqtkusgzsnhufwcspawp/Index/PrecompiledHeaders/Fluid_Prefix-fdqdhpadpubpiwgutayuaivdfgtc_ast/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+CProcessPCH++ /Users/Tellart/Library/Developer/Xcode/DerivedData/Fluid-emjstcrpuaskroespvwugurdkxuq/Index/PrecompiledHeaders/Fluid_Prefix-ersgoqlutgnwnteouopidhhgqysy_ast/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
-CProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-gihezbjlkezbvkempxcstrutktma/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s408402664.589781
-e408402672.470792
+CProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s408558328.286013
+e408558343.724878
 r1
 xProcessPCH++
-x/var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-gihezbjlkezbvkempxcstrutktma/Fluid_Prefix.pch.pth
+x/var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth
 xFluid_Prefix.pch
 xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection27"Precompile Fluid_Prefix.pch9c3697e8ba57b841^d38578f0ba57b841^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/Tellart/Documents/cinder/Fluid/xcode/Fluid_Prefix.pch0000000000000000^2824"ProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-gihezbjlkezbvkempxcstrutktma/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/Documents/cinder/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/Documents/cinder/Fluid/xcode/build/Debug/include -I../../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/Documents/cinder/Fluid/xcode/build/Debug --serialize-diagnostics /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-gihezbjlkezbvkempxcstrutktma/Fluid_Prefix.pch.dia -c /Users/Tellart/Documents/cinder/Fluid/xcode/Fluid_Prefix.pch -o /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-gihezbjlkezbvkempxcstrutktma/Fluid_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-gihezbjlkezbvkempxcstrutktma/Fluid_Prefix.pch.d36"19A0D20B-C4EA-4F17-8A45-6792217C0217-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection27"Precompile Fluid_Prefix.pch2f6c49f81a5ab841^f390b9071b5ab841^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/Tellart/cinderFluid/Fluid/xcode/Fluid_Prefix.pch0000000000000000^2768"ProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/include -I../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug --serialize-diagnostics /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.dia -c /Users/Tellart/cinderFluid/Fluid/xcode/Fluid_Prefix.pch -o /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.d36"9EB3B995-B0E3-4CCB-8539-CA0A561D4064-
 
-CTouch /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app
-s408402678.958306
-e408402679.019544
+CTouch /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app
+s408558350.021071
+e408558350.133624
 r1
 xTouch
-x/Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Touch /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app0666f5f6ba57b841^b00105f7ba57b841^---0#0#0#--171"Touch ./build/Debug/Fluid.app    cd /Users/Tellart/Documents/cinder/Fluid/xcode    /usr/bin/touch -c /Users/Tellart/Documents/cinder/Fluid/xcode/./build/Debug/Fluid.app36"B3E491D2-7DA4-466C-851D-F7CD34816D1B-
+x/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Touch /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app5b7d050e1b5ab841^4c36220e1b5ab841^---0#0#0#--161"Touch ./build/Debug/Fluid.app    cd /Users/Tellart/cinderFluid/Fluid/xcode    /usr/bin/touch -c /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app36"DA85B8C3-8C60-4CA3-9411-3C340FB39F39-
 

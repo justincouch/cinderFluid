@@ -12,13 +12,13 @@
 		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
 		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
-		26398575EE4D40AE9660FA47 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D864399068845B28F8620A1 /* CinderApp.icns */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		93F7AF3576F94B00BD8F4486 /* FluidApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E29E71208544B4ABEA98A37 /* FluidApp.cpp */; };
-		DC4502A71857BB4D008B4FF1 /* ParticleController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC4502A51857BB4D008B4FF1 /* ParticleController.cpp */; };
-		DC4502AA1857BD32008B4FF1 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC4502A81857BD32008B4FF1 /* Particle.cpp */; };
+		B7C2E08EDBCF4873B6B568ED /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = DE91430D56F44277B3FA4A34 /* CinderApp.icns */; };
+		DC86613B185A1BD9002890BA /* FluidApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC866139185A1BD9002890BA /* FluidApp.cpp */; };
+		DC86613E185A1C5D002890BA /* ParticleController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC86613C185A1C5D002890BA /* ParticleController.cpp */; };
+		DC866141185A1C68002890BA /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC86613F185A1C68002890BA /* Particle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,16 +32,16 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
-		5E29E71208544B4ABEA98A37 /* FluidApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = FluidApp.cpp; path = ../src/FluidApp.cpp; sourceTree = "<group>"; };
-		77BDC1BBD9054901B42063C7 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
-		7D864399068845B28F8620A1 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		6373225F270241B3B7B1E2B6 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		8ABE23879F8E4E36B60CEFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Fluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD568D237A154F6F8F643F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC4502A51857BB4D008B4FF1 /* ParticleController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleController.cpp; sourceTree = "<group>"; };
-		DC4502A61857BB4D008B4FF1 /* ParticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleController.h; sourceTree = "<group>"; };
-		DC4502A81857BD32008B4FF1 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
-		DC4502A91857BD32008B4FF1 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
-		E2549B5CFDD243F5925E701A /* Fluid_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = Fluid_Prefix.pch; sourceTree = "<group>"; };
+		CA50BC512C6A4155BEAB81A7 /* Fluid_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = Fluid_Prefix.pch; sourceTree = "<group>"; };
+		DC866139185A1BD9002890BA /* FluidApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FluidApp.cpp; sourceTree = "<group>"; };
+		DC86613C185A1C5D002890BA /* ParticleController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleController.cpp; sourceTree = "<group>"; };
+		DC86613D185A1C5D002890BA /* ParticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleController.h; sourceTree = "<group>"; };
+		DC86613F185A1C68002890BA /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		DC866140185A1C68002890BA /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		DE91430D56F44277B3FA4A34 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +73,9 @@
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5E29E71208544B4ABEA98A37 /* FluidApp.cpp */,
-				DC4502A51857BB4D008B4FF1 /* ParticleController.cpp */,
-				DC4502A81857BD32008B4FF1 /* Particle.cpp */,
+				DC866139185A1BD9002890BA /* FluidApp.cpp */,
+				DC86613C185A1C5D002890BA /* ParticleController.cpp */,
+				DC86613F185A1C68002890BA /* Particle.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -128,10 +128,10 @@
 		29B97315FDCFA39411CA2CEA /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				77BDC1BBD9054901B42063C7 /* Resources.h */,
-				E2549B5CFDD243F5925E701A /* Fluid_Prefix.pch */,
-				DC4502A61857BB4D008B4FF1 /* ParticleController.h */,
-				DC4502A91857BD32008B4FF1 /* Particle.h */,
+				6373225F270241B3B7B1E2B6 /* Resources.h */,
+				DC86613D185A1C5D002890BA /* ParticleController.h */,
+				DC866140185A1C68002890BA /* Particle.h */,
+				CA50BC512C6A4155BEAB81A7 /* Fluid_Prefix.pch */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -139,8 +139,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7D864399068845B28F8620A1 /* CinderApp.icns */,
-				CD568D237A154F6F8F643F61 /* Info.plist */,
+				DE91430D56F44277B3FA4A34 /* CinderApp.icns */,
+				8ABE23879F8E4E36B60CEFCC /* Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26398575EE4D40AE9660FA47 /* CinderApp.icns in Resources */,
+				B7C2E08EDBCF4873B6B568ED /* CinderApp.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F7AF3576F94B00BD8F4486 /* FluidApp.cpp in Sources */,
-				DC4502A71857BB4D008B4FF1 /* ParticleController.cpp in Sources */,
-				DC4502AA1857BD32008B4FF1 /* Particle.cpp in Sources */,
+				DC86613B185A1BD9002890BA /* FluidApp.cpp in Sources */,
+				DC86613E185A1C5D002890BA /* ParticleController.cpp in Sources */,
+				DC866141185A1C68002890BA /* Particle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +277,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = ../../../../Downloads/cinder_0.8.5_mac;
+				CINDER_PATH = ../../../Downloads/cinder_0.8.5_mac;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -294,7 +294,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = i386;
-				CINDER_PATH = ../../../../Downloads/cinder_0.8.5_mac;
+				CINDER_PATH = ../../../Downloads/cinder_0.8.5_mac;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
