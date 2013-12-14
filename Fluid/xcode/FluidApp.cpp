@@ -3,6 +3,7 @@
 #include "cinder/params/Params.h"
 #include "cinder/Vector.h"
 #include "ParticleController.h"
+#include <array>
 
 using namespace ci;
 using namespace ci::app;
@@ -11,30 +12,64 @@ using namespace std;
 #define NUM_INITIAL_PARTICLES 200
 
 class FluidApp : public AppNative {
-public:
-	void setup();
+  public:
+	void prepareSettings( Settings *settings );
+    
+    void setup();
 	void mouseDown( MouseEvent event );
 	void update();
 	void draw();
     
-    void prepareSettings( Settings *settings );
-    
-    float               mGravity;
     Vec2i               mWindowSize;
     float               mNeighborhood;
+    Vec2i               mCellIndices;
     
+    float               mGravity;
+    float               mViscositySigma;
+    float               mViscosityBeta;
+    float               mRestDensity;
+    float               mStiffnessParameter;
+    float               mStiffnessParameterNear;
+    
+    // PARAMS
+	params::InterfaceGl	mParams;
+    
+    // PARTICLE CONTROLLER
     ParticleController  mParticleController;
 };
 
 void FluidApp::setup()
 {
     mWindowSize     = Vec2i( getWindowWidth(), getWindowHeight() );
+    mGravity = 0.0f/60.0f;
+    mNeighborhood = 29.0f;
+    mViscositySigma = 0.01f;
+    mViscosityBeta = 0.0001f;
+    mRestDensity = 10.0f;
+    mStiffnessParameter = 0.04f;
+    mStiffnessParameterNear = 0.1f;
     
-    mGravity = 9.8f/60.0f;
+    mCellIndices = Vec2i( int( ceil( mWindowSize.x / mNeighborhood ) ), int( ceil( mWindowSize.y / mNeighborhood ) ) );
+    console() << "Cells: " << mCellIndices << std::endl;
     
-    mNeighborhood = 30.0f;
+    // SETUP PARAMS
+	mParams = params::InterfaceGl( "Fluid Simulation", Vec2i( 200, 400 ) );
+    mParams.addParam( "Neighborhood", &mNeighborhood, "min=5.0 max=100.0 step=1.0" );
+    mParams.addSeparator();
+    mParams.addParam( "Viscosity Sigma", &mViscositySigma, "min=0.0 max=0.3 step=0.001" );
+    mParams.addParam( "Viscosity Beta", &mViscosityBeta, "min=0.0 max=0.03 step=0.0001" );
+    mParams.addSeparator();
+    mParams.addParam( "Rest Density", &mRestDensity, "min=0.0 max=100.0 step=0.5" );
+    mParams.addParam( "Stiffness", &mStiffnessParameter, "min=0.0 max=0.05 step=0.001" );
+    mParams.addParam( "Near Stiffness", &mStiffnessParameterNear, "min=0.0 max=0.5 step=0.01" );
     
     mParticleController.addParticles( NUM_INITIAL_PARTICLES );
+    
+    for (int j=0; j<mCellIndices.y; j++){
+        for ( int i=0; i<mCellIndices.x; i++){
+            
+        }
+    }
 }
 
 void FluidApp::mouseDown( MouseEvent event )
@@ -43,7 +78,7 @@ void FluidApp::mouseDown( MouseEvent event )
 
 void FluidApp::update()
 {
-    mParticleController.update( mWindowSize, mGravity, mNeighborhood );
+    mParticleController.update( mWindowSize, mGravity, mNeighborhood, mViscositySigma, mViscosityBeta, mRestDensity, mStiffnessParameter, mStiffnessParameterNear );
 }
 
 void FluidApp::draw()
@@ -51,7 +86,10 @@ void FluidApp::draw()
 	// clear out the window with black
 	gl::clear( ColorA( 0.0f, 0.0f, 0.0f, 0.25f ) );
     
-    mParticleController.draw();
+    mParticleController.draw( mNeighborhood );
+    
+    // DRAW PARAMS WINDOW
+    mParams.draw();
 }
 
 void FluidApp::prepareSettings( Settings *settings )

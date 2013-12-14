@@ -20,13 +20,14 @@ class ParticleController {
 public:
     ParticleController();
     
-    void update( const ci::Vec2i &windowSize, float gravity, float neighborhood );
-    void draw();
+    void update( const ci::Vec2i &windowSize, float gravity, float neighborhood, float viscositySigma, float viscosityBeta, float mRestDensity, float mStiffnessParameter, float mStiffnessParameterNear );
+    void draw( float neighborhood );
     
     void addParticles( int amt );
-    
+    void checkForNeighbors( float neighborhood );
     void applyGravity( float gravity );
-    void applyViscosity( float neighborhood );
+    void applyViscosity( float neighborhood, float viscositySigma, float viscosityBeta );
+    void doubleDensityRelaxation( float neighborhood, float restDensity, float stiffnessParameter, float stiffnessParameterNear );
     
     int mNumParticles;
     std::list<Particle>	mParticles;

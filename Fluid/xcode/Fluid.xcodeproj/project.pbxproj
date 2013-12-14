@@ -16,6 +16,7 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		B7C2E08EDBCF4873B6B568ED /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = DE91430D56F44277B3FA4A34 /* CinderApp.icns */; };
+		DC5C08DA185B5CA500FFC593 /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5C08D8185B5CA500FFC593 /* Cell.cpp */; };
 		DC86613B185A1BD9002890BA /* FluidApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC866139185A1BD9002890BA /* FluidApp.cpp */; };
 		DC86613E185A1C5D002890BA /* ParticleController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC86613C185A1C5D002890BA /* ParticleController.cpp */; };
 		DC866141185A1C68002890BA /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC86613F185A1C68002890BA /* Particle.cpp */; };
@@ -36,6 +37,8 @@
 		8ABE23879F8E4E36B60CEFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Fluid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA50BC512C6A4155BEAB81A7 /* Fluid_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = Fluid_Prefix.pch; sourceTree = "<group>"; };
+		DC5C08D8185B5CA500FFC593 /* Cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cell.cpp; sourceTree = "<group>"; };
+		DC5C08D9185B5CA500FFC593 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
 		DC866139185A1BD9002890BA /* FluidApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FluidApp.cpp; sourceTree = "<group>"; };
 		DC86613C185A1C5D002890BA /* ParticleController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleController.cpp; sourceTree = "<group>"; };
 		DC86613D185A1C5D002890BA /* ParticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleController.h; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				DC866139185A1BD9002890BA /* FluidApp.cpp */,
+				DC5C08D8185B5CA500FFC593 /* Cell.cpp */,
 				DC86613C185A1C5D002890BA /* ParticleController.cpp */,
 				DC86613F185A1C68002890BA /* Particle.cpp */,
 			);
@@ -130,6 +134,7 @@
 			children = (
 				6373225F270241B3B7B1E2B6 /* Resources.h */,
 				DC86613D185A1C5D002890BA /* ParticleController.h */,
+				DC5C08D9185B5CA500FFC593 /* Cell.h */,
 				DC866140185A1C68002890BA /* Particle.h */,
 				CA50BC512C6A4155BEAB81A7 /* Fluid_Prefix.pch */,
 			);
@@ -218,6 +223,7 @@
 				DC86613B185A1BD9002890BA /* FluidApp.cpp in Sources */,
 				DC86613E185A1C5D002890BA /* ParticleController.cpp in Sources */,
 				DC866141185A1C68002890BA /* Particle.cpp in Sources */,
+				DC5C08DA185B5CA500FFC593 /* Cell.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
