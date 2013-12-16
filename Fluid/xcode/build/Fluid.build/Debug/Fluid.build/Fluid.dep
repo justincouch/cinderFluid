@@ -1,11 +1,12 @@
 ffffffffffffffffffffffffffffffff 08a8bf81f7d7cb5cb4d6a2c36e0990ec ffffffffffffffffffffffffffffffff 102 /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app
-ffffffffffffffffffffffffffffffff 51448874ddd03d35b61cad0a4e8fbe36 ffffffffffffffffffffffffffffffff 4153476 /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/MacOS/Fluid
-80bbf81d308f82e3bbbfe49b61031fa2 a96f6bab46441a34af4cd267ba370acd ffffffffffffffffffffffffffffffff 1841956 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o
-80bbf81d308fe84dbbbfe49b610304ae 66ef6c9736666efa3bd3769075d23449 ffffffffffffffffffffffffffffffff 144040 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Cell.o
-80bbf81d335ccc0bbbbfe49b610324b8 5c039f31266444db4e67d28b97ee8d9f ffffffffffffffffffffffffffffffff 2123788 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.o
-80bbf81d308f82e3bbbfe49b61030554 00b994561f4322bff69ff702ba7732bc ffffffffffffffffffffffffffffffff 188196 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.o
+ffffffffffffffffffffffffffffffff 51448874ddd03d35b61cad0a4e8fbe36 ffffffffffffffffffffffffffffffff 4249840 /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/MacOS/Fluid
+80bbf81d61f7ce72bbbfe49b61032667 7268f581f76d6cf64eea623cfcf3247f ffffffffffffffffffffffffffffffff 92444 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.o
+80bbf81d33598e8cbbbfe49b61032420 5c039f31266444db4e67d28b97ee8d9f ffffffffffffffffffffffffffffffff 2126252 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.o
+80bbf81d6221ea55bbbfe49b610300c9 00b994561f4322bff69ff702ba7732bc ffffffffffffffffffffffffffffffff 273988 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.o
+80bbf81d6221ea55bbbfe49b61031a3f a96f6bab46441a34af4cd267ba370acd ffffffffffffffffffffffffffffffff 1911436 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o
 0000000052275c4c000000000000a28e 80bbf81d61b110a5bbbfe49b6101111d ffffffffffffffffffffffffffffffff 64076856 /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth
 00000000000000000000000000000000 2af0a59bc8370fe88423dbe157075f8c ffffffffffffffffffffffffffffffff 459637 /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
 00000000000000000000000000000000 7efc0d4b11cc69ed5c2b9f6cbd087fea ffffffffffffffffffffffffffffffff 8 /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/PkgInfo
 00000000000000000000000000000000 7efc0d4b11cc69ed5c2b9f6cbd087fea ffffffffffffffffffffffffffffffff 1441 /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Info.plist
+80bbf81d308948e0bbbfe49b610304c3 66ef6c9736666efa3bd3769075d23449 ffffffffffffffffffffffffffffffff 144056 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Cell.o
 ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 0 /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/File.o

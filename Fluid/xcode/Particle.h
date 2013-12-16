@@ -16,15 +16,16 @@
 #include <vector>
 #include <algorithm>
 
-#endif /* defined(__Fluid__Particle__) */
+
 
 class Particle {
-  public:
+public:
     Particle();
     
     void update();
-    void draw( float neighborhood );
-    void addNeighbor( Particle p );
+    void draw( float neighborhood, float restDensity );
+    void addNeighbor( Particle *p );
+    void addForwardNeighbor( Particle *p );
     void saveLastPosition();
     void computeNextVelocity( const ci::Vec2i &windowSize );
     
@@ -38,7 +39,12 @@ class Particle {
     float       mPressure;
     float       mNearPressure;
     
+    float       mDecay;
+    
     float       mRadius;
     
     std::list<Particle>	mNeighbors;
+    std::list<Particle>	mForwardNeighbors;
 };
+
+#endif /* defined(__Fluid__Particle__) */
