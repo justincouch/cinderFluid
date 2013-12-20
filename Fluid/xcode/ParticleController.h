@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <list>
+#include <vector>
 
 #include "Particle.h"
 #include "Spring.h"
@@ -25,7 +26,9 @@ class ParticleController {
     
     void addParticles( int amt );
     void addSprings();
-    void updateSprings( float springStrength );
+    void addSpring( Spring *spring );
+    void destroySpring( Spring *spring );
+    void updateSprings( float springStrength, float neighborhood );
     void checkForNeighbors( float neighborhood );
     void applyGravity( float gravity );
     void applyViscosity( float neighborhood, float viscositySigma, float viscosityBeta );
@@ -34,7 +37,8 @@ class ParticleController {
     int mNumParticles;
     int mNumSprings;
     std::list<Particle>	mParticles;
-    std::list<Spring>	mSprings;
+    //std::list<Spring>	mSprings;
+    std::vector<Spring*> mSprings;
 };
 
 #endif /* defined(__Fluid__ParticleController__) */

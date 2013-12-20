@@ -19,48 +19,65 @@ Spring::Spring()
 {
 }
 
-Spring::Spring( Particle *particleA, Particle *particleB )
+Spring::Spring( Particle *particleA, Particle *particleB, float neighborhood )
 {
-    pA = particleA;
-    pB = particleB;
+    this->particleA = particleA;
+    this->particleB = particleB;
     
-    mRestLength = 100.0f;
+    
+    mRestLength = neighborhood;
     mRestLengthSqrd = mRestLength * mRestLength;
-    mSpringStrength = 0.1f;
+    mSpringStrength = 0.3f;
+    mYieldRatio = 0.01f;
+    mPlasticityConstant = 0.3f;
     
     mIsActive = false;
 }
 
-void Spring::update( float springStrength )
+void Spring::update( float springStrength, float neighborhood )
 {
-    //std::cout << "updating spring";
     mSpringStrength = springStrength;
-    ci::Vec2f dir = pA->mPos - pB->mPos;
+    //std::cout << "restLengthPRE: " << mRestLength << "\n";
+    ci::Vec2f dir = particleA->mPos - particleB->mPos;
     float dirLength = dir.length();
-    //float dirLengthSqrd = dir.lengthSquared();
-    ci::Vec2f D = mSpringStrength * ( 1 - mRestLength / dirLength ) * ( mRestLength - dirLength ) * dir.normalized();
-    //pA->mPos -= D/2;
-    //pB->mPos += D/2;
+    float dirLengthSqrd = dir.lengthSquared();
+    
+    
+    float d = mYieldRatio * mRestLength;
+    if ( dirLength > mRestLength + d ){
+        mRestLength += mPlasticityConstant * ( dirLength - mRestLength - d );
+    }
+    else if ( dirLength < mRestLength - d ){
+        mRestLength -= mPlasticityConstant * ( mRestLength - d - dirLength );
+    }
+    
+    
+    ci::Vec2f D = mSpringStrength * ( 1 - mRestLength / neighborhood ) * ( mRestLength - dirLength ) * dir.normalized();
+    //ci::Vec2f D = mSpringStrength * ( mRestLength - dirLength ) * dir.normalized();
+    
+    //std::cout << "dist: " << dirLength << ", restLength: " << mRestLength << ", d+: " << mRestLength+d << ", d-: " << mRestLength-d << ", D: " << D << "\n";
+    
+    particleA->mPos -= D/2;
+    particleB->mPos += D/2;
     
     //this->draw();
 }
 
 void Spring::draw()
 {
-    //std::cout << pA->mPos;
+    //std::cout << "AAAAAAAAAAA" << mIsActive << "\n";
     glColor4f( 1.0f, 0.25f, 0.25f, 1.0f );
-    gl::drawLine( this->pA->mPos, this->pB->mPos );
+    gl::drawLine( particleA->mPos, particleB->mPos );
 }
 
 void Spring::makeActive()
 {
-    //std::cout << "making active";
-    mIsActive = true;
-    //std::cout << mIsActive;
+    mIsActive = 1;
+    std::cout << "making active->" << mIsActive << "\n";
 }
 
 void Spring::kill()
 {
-    //std::cout << "KILLING!";
-    mIsActive = false;
+    mIsActive = 0;
+    std::cout << "KILLING!->" << mIsActive << "\n";
 }

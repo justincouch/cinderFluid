@@ -18,20 +18,22 @@
 class Spring {
   public:
     Spring();
-    Spring( Particle *pA, Particle *pB );
+    Spring( Particle *particleA, Particle *particleB, float neighborhood );
     
-    void update( float springStiffness );
+    void update( float springStiffness, float neighborhood );
     void draw();
     
     void makeActive();
     void kill();
     
-    Particle *pA;
-    Particle *pB;
+    Particle *particleA;
+    Particle *particleB;
     
     float   mRestLength;
     float   mRestLengthSqrd;
+    float   mYieldRatio;
     float   mSpringStrength;
+    float   mPlasticityConstant;
     bool    mIsActive;
 };
 

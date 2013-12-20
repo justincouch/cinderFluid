@@ -9,7 +9,7 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-#define NUM_INITIAL_PARTICLES 300
+#define NUM_INITIAL_PARTICLES 200
 
 class FluidApp : public AppNative {
   public:
@@ -44,13 +44,13 @@ class FluidApp : public AppNative {
 void FluidApp::setup()
 {
     mWindowSize     = Vec2i( getWindowWidth(), getWindowHeight() );
-    mGravity = 0.0f;
-    mNeighborhood = 29.0f;
-    mViscositySigma = 0.00f;
-    mViscosityBeta = 0.1f;
+    mGravity = 0.1f;
+    mNeighborhood = 40.0f;
+    mViscositySigma = 0.001f;
+    mViscosityBeta = 0.01f;
     mRestDensity = 10.0f;
-    mStiffnessParameter = 0.04f;
-    mStiffnessParameterNear = 0.1f;
+    mStiffnessParameter = 0.004f;
+    mStiffnessParameterNear = 0.01f;
     mSpringStiffness = 0.3f;
     
     NUM_SPRINGS = NUM_INITIAL_PARTICLES * ( NUM_INITIAL_PARTICLES - 1 ) / 2;
@@ -70,11 +70,11 @@ void FluidApp::setup()
     mParams.addParam( "Stiffness", &mStiffnessParameter, "min=0.0 max=0.5 step=0.001" );
     mParams.addParam( "Near Stiffness", &mStiffnessParameterNear, "min=0.0 max=0.5 step=0.001" );
     mParams.addSeparator();
-    mParams.addParam( "Spring Stiffness", &mSpringStiffness, "min=0.0 max=5.0 step=0.01" );
+    mParams.addParam( "Spring Stiffness", &mSpringStiffness, "min=0.0 max=5.0 step=0.001" );
     
     mParticleController.addParticles( NUM_INITIAL_PARTICLES );
     
-    mParticleController.addSprings();
+    //mParticleController.addSprings();
 }
 
 void FluidApp::mouseDown( MouseEvent event )

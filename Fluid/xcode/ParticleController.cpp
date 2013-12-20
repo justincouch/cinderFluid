@@ -11,6 +11,7 @@
 
 using namespace ci;
 using std::list;
+using std::vector;
 
 ParticleController::ParticleController()
 {
@@ -19,7 +20,7 @@ ParticleController::ParticleController()
 void ParticleController::update( const ci::Vec2i &windowSize, float gravity, float neighborhood, float viscositySigma, float viscosityBeta, float mRestDensity, float mStiffnessParameter, float mStiffnessParameterNear, float mSpringStiffness )
 {
     checkForNeighbors( neighborhood );
-    
+    //updateSprings( mSpringStiffness, neighborhood );
     applyGravity( gravity );
     
     applyViscosity( neighborhood, viscositySigma, viscosityBeta );
@@ -32,7 +33,7 @@ void ParticleController::update( const ci::Vec2i &windowSize, float gravity, flo
         p->update();
     }
     
-    updateSprings( mSpringStiffness );
+    updateSprings( mSpringStiffness, neighborhood );
     //adjustSprings
     //applySpringDisplacements
     doubleDensityRelaxation( neighborhood, mRestDensity, mStiffnessParameter, mStiffnessParameterNear );
@@ -73,16 +74,30 @@ void ParticleController::doubleDensityRelaxation( float neighborhood, float rest
 
 }
 
-void ParticleController::updateSprings( float springStrength )
+void ParticleController::updateSprings( float springStrength, float neighborhood )
 {
-    //std::cout << "updating springs";
-    for ( list<Spring>::iterator s = mSprings.begin(); s != mSprings.end(); ++s ){
-        //std::cout << s->mIsActive;
-        if ( s->mIsActive == true ){
+    //std::cout << "mSpring size: " << mSprings.size();
+    /*
+    for ( int i=0; i<mSprings.size(); i++ ){
+        Spring s = mSprings.at( i );
+        std::cout << i << ": " << s.pA->mPos << ": " << s.pB->mPos << ": " << s.mIsActive << "\n";
+        //if ( s.mIsActive == 1 ){
             //std::cout << "YAY";
-            s->update( springStrength );
+            s.update( springStrength );
             //s->draw();
+        //}
+    }
+    */
+    for ( vector<Spring*>::iterator s = mSprings.begin(); s != mSprings.end(); ++s ){
+        //std::cout << s->mIsActive;
+        //if ( s->mIsActive == true ){
+        //std::cout << "YAY";
+        (*s)->update( springStrength, neighborhood );
+        if ( (*s)->mRestLength > neighborhood ){
+            destroySpring( *s );
         }
+        //(*s)->draw();
+        //}
     }
 }
 
@@ -91,41 +106,71 @@ void ParticleController::checkForNeighbors( float neighborhood )
     int ctr1 = 0;
     int ctr2 = 0;
     float neighborhoodSqrd = neighborhood * neighborhood;
-    list<Spring>::iterator s1 = mSprings.begin();
+    int scnt = 0;
+    Spring *s1;
     Particle *it;
     for ( list<Particle>::iterator p1 = mParticles.begin(); p1 != mParticles.end(); ++p1 ){
+        if ( ctr1 < mParticles.size() - 1 ){
+            
+        
         for ( list<Particle>::iterator p2 = mParticles.begin(); p2 != mParticles.end(); ++p2 ){
+            //std::cout << "s: " << scnt << "\n";
+            //std::cout << "1: " << ctr1 << "\n";
+            //std::cout << "2: " << ctr2 << "\n";
             if ( ctr1 != ctr2 ){
                 Vec2f rij = p1->mPos - p2->mPos;
                 float rijSqrd = rij.lengthSquared();
                 float q = rijSqrd / neighborhoodSqrd;
                 it = &*p2;
+                //s1 = mSprings.at( scnt );
+                //std::cout << "before: " << s1.mIsActive << "\n";
+                /*
+                std::cout << "p1: ";
+                std::cout << p1->mPos;
+                std::cout << " p2: ";
+                std::cout << p2->mPos << "\n";
+                std::cout << "sA: ";
+                std::cout << s1.pA->mPos;
+                std::cout << " sb: ";
+                std::cout << s1.pB->mPos << "\n\n";
+                 */
+                Particle *part1 = &*p1;
+                Particle *part2 = &*p2;
+                
                 if ( q < 1.0f ){
                     p1->addNeighbor( it );
                     if ( ctr2 > ctr1 ){
                         p1->addForwardNeighbor( it );
+                        //std::cout << scnt << "\n";
+                        s1 = new Spring( part1, part2, neighborhood );
+                        //std::cout << scnt << ": " << s1->particleA->mPos << ": " << s1->particleB->mPos << "\n";
+                        addSpring( s1 );
+                        //s1.makeActive();
+                        //s1.mIsActive = true;
                     }
-                    s1->makeActive();
-                    std::cout << "\np1: ";
-                    std::cout << p1->mPos;
-                    std::cout << " p2: ";
-                    std::cout << p2->mPos;
-                    std::cout << "\nsA: ";
-                    std::cout << s1->pA->mPos;
-                    std::cout << " sb: ";
-                    std::cout << s1->pB->mPos;
                 }
                 else {
                     //std::cout << "FALSE";
-                    s1->kill();
+                    if ( ctr2 > ctr1 ){
+                        //std::cout << scnt << "\n";
+                        //s1 = new Spring( part1, part2, neighborhood );
+                        //destroySpring( s1 );
+                        //s1.kill();
+                        //s1.mIsActive = false;
+                    }
+                }
+                //std::cout << "after: " << s1.mIsActive << "\n";
+                
+                if ( ctr2 > ctr1 ){
+                   scnt++; // springs are forward counting
                 }
             }
             ctr2++;
-            s1++;
+        }
         }
         ctr1++;
         ctr2 = 0;
-        s1++;
+        //scnt++;
     }
 }
 
@@ -135,13 +180,15 @@ void ParticleController::draw( float neighborhood, float restDensity )
         p->draw( neighborhood, restDensity );
     }
     
-    for ( list<Spring>::iterator s = mSprings.begin(); s != mSprings.end(); ++s ){
+    //std::cout << "mSpring size: " << mSprings.size() << "\n";
+    //std::cout << mSprings.at(281).mIsActive << "\n";
+    for ( vector<Spring*>::iterator s = mSprings.begin(); s != mSprings.end(); ++s ){
         //std::cout << s->mIsActive;
-        if ( s->mIsActive == true ){
+        //if ( s->mIsActive == true ){
             //std::cout << "YAY";
-            //s->update( springStrength );
-            s->draw();
-        }
+            //(*s)->update( springStrength );
+            (*s)->draw();
+        //}
     }
 }
 
@@ -159,9 +206,74 @@ void ParticleController::addSprings()
         list<Particle>::iterator p2 = p1;
 		for( ++p2; p2 != mParticles.end(); ++p2 ) {
             Particle *itB = &*p2;
-            mSprings.push_back( Spring( itA, itB ) );
+            //mSprings.push_back( Spring( itA, itB ) );
         }
     }
+}
+
+void ParticleController::addSpring( Spring *spring )
+{
+    //std::vector<Spring*>::iterator it = std::find( mSprings.begin(), mSprings.end(), spring );
+    //std::cout << *it;
+    //mSprings.push_back( spring );
+    bool sprAlreadyExists = false;
+    
+    for ( vector<Spring*>::iterator s = mSprings.begin(); s != mSprings.end(); ++s ){
+        //std::cout << spring->particleA->mPos;
+        //std::cout << (*s)->particleA->mPos;
+        if ( ( spring->particleA->mPos == (*s)->particleA->mPos ) && ( spring->particleB->mPos == (*s)->particleB->mPos ) ){
+            sprAlreadyExists = true;
+            break;
+        }
+    }
+     
+    
+    if ( sprAlreadyExists == true ) {
+        //std::cout << "spring already exists" << "\n";
+    }
+    else if ( sprAlreadyExists == false ) {
+        //std::cout << "adding spring" << "\n";
+        mSprings.push_back( spring );
+    }
+}
+
+void ParticleController::destroySpring( Spring *spring )
+{
+    bool sprAlreadyExists = false;
+    vector<Spring*>::iterator sIT;
+    for ( vector<Spring*>::iterator s = mSprings.begin(); s != mSprings.end(); ++s ){
+        //std::cout << spring->particleA->mPos;
+        //std::cout << (*s)->particleA->mPos;
+        if ( ( spring->particleA->mPos == (*s)->particleA->mPos ) && ( spring->particleB->mPos == (*s)->particleB->mPos ) ){
+            sprAlreadyExists = true;
+            sIT = s;
+            break;
+        }
+    }
+    if ( sprAlreadyExists == true ) {
+        //std::cout << "mSpring size before: " << mSprings.size() << "\n";
+        //std::cout << "TERMINATE!!!" << "\n";
+        mSprings.erase( sIT );
+        //std::cout << "mSpring size after: " << mSprings.size() << "\n";
+    }
+    else if ( sprAlreadyExists == false ) {
+        //std::cout << "can't destroy. not there" << "\n";
+    }
+    
+    /*
+    std::vector<Spring*>::iterator it = std::find( mSprings.begin(), mSprings.end(), spring );
+    //delete *it;
+    //mSprings.erase( it );
+    
+    if( it != mSprings.end() ) {
+        std::cout << "mSpring size before: " << mSprings.size() << "\n";
+        std::cout << "TERMINATE!!!" << "\n";
+        mSprings.erase( it );
+        std::cout << "mSpring size after: " << mSprings.size() << "\n";
+    } else {
+        std::cout << "can't destroy. not there" << "\n";
+    }
+     */
 }
 
 void ParticleController::applyGravity( float gravity )
