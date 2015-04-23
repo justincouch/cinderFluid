@@ -1,229 +1,1088 @@
 TFluid
-v5
+v6
 r1
 cCheck dependencies
-cProcessInfoPlistFile /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist Info.plist
-cCpResource ../resources/CinderApp.icns ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
-cProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cProcessInfoPlistFile /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Info.plist /Users/Tellart/cinderFluid/Fluid/xcode/Info.plist
+cCpResource /Users/Tellart/cinderFluid/Fluid/resources/CinderApp.icns build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
+cProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch.pch Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o /Users/Tellart/cinderFluid/Fluid/xcode/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.o /Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.o /Users/Tellart/cinderFluid/Fluid/xcode/Particle.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.o /Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386
-cTouch /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app
 
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
-c000000005130312F00000000000000AA
-t1362112815
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c000000005243E79F00000000000000AA
+t1380181919
 s170
 
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
-c0000000051F6B46900000000000024F0
-t1375122537
-s9456
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000531266CD000000000000044C
+t1393714893
+s1100
 
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c0000000051F6B46A0000000000024DD8
-t1375122538
-s151000
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531266CD00000000000001DB
+t1393714893
+s475
 
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
-c0000000051F6B46A00000000000060B4
-t1375122538
-s24756
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c00000000531266CD00000000000024B0
+t1393714893
+s9392
 
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000051F6B46A00000000000001E5
-t1375122538
-s485
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000531266CD0000000000028484
+t1393714893
+s164996
 
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
-c0000000051F6B46A000000000000E9A8
-t1375122538
-s59816
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
+c00000000531266CD0000000000006268
+t1393714893
+s25192
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c00000000531266CD000000000000E448
+t1393714893
+s58440
 
 N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c0000000051C37E290000000000006560
-t1371766313
-s25952
+c000000005310E46C00000000000066C0
+t1393615980
+s26304
 
 N/System/Library/Frameworks/CoreVideo.framework/CoreVideo
-c0000000051C37E2C000000000007CED0
-t1371766316
-s511696
+c000000005310E46F0000000000080210
+t1393615983
+s524816
 
 N/System/Library/Frameworks/OpenGL.framework/OpenGL
-c0000000051C37E35000000000002D360
-t1371766325
-s185184
+c000000005310E478000000000002C960
+t1393615992
+s182624
 
 N/System/Library/Frameworks/QTKit.framework/QTKit
-c00000000526800F600000000004B9FB0
-t1382547702
-s4956080
+c000000005310E47C000000000049ED90
+t1393615996
+s4844944
 
-N/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Cinder.h
-c0000000051780B7C0000000000000CEB
-t1366821756
-s3307
-
-N/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/CinderMath.h
-c0000000051780B7C0000000000001F9E
-t1366821756
-s8094
-
-N/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Matrix.h
-c0000000051780B7C0000000000000EDD
-t1366821756
-s3805
-
-N/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Quaternion.h
-c0000000051780B7D0000000000005499
-t1366821757
-s21657
-
-N/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Vector.h
-c0000000051780B7D000000000000AD7C
-t1366821757
-s44412
-
-N/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/AppBasic.h
-c0000000051780B7D0000000000002262
-t1366821757
-s8802
-
-N/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/gl/gl.h
-c0000000051780B7E0000000000006469
-t1366821758
-s25705
-
-N/Users/Tellart/cinderFluid/Fluid/xcode/../resources/CinderApp.icns
+N/Users/Tellart/cinderFluid/Fluid/resources/CinderApp.icns
 c0000000052A9E3590000000000070375
 t1386865497
 s459637
 
-N/Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp
-c0000000052A9E35900000000000001FA
-t1386865497
-s506
-
-N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app
-t2
-s0
-
-N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist
-t2
-s0
-
-N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid
-t2
-s0
-
-N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/PkgInfo
-t2
-s0
-
-N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
-t2
-s0
-
-N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Fluid.LinkFileList
-c0000000052A9E378000000000000006C
-t1386865528
-s108
-
-N/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o
-t2
-s0
+N/Users/Tellart/cinderFluid/Fluid/xcode/FluidApp.cpp
+c0000000052B49EB00000000000000C9B
+t1387568816
+s3227
 
 N/Users/Tellart/cinderFluid/Fluid/xcode/Fluid_Prefix.pch
 c0000000052A9E359000000000000012D
 t1386865497
 s301
-i<Cocoa/Cocoa.h>
-i"cinder/Cinder.h"
-i"cinder/app/AppBasic.h"
-i"cinder/gl/gl.h"
-i"cinder/CinderMath.h"
-i"cinder/Matrix.h"
-i"cinder/Vector.h"
-i"cinder/Quaternion.h"
 
-N/var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth
-t2
-s0
-
-NInfo.plist
+N/Users/Tellart/cinderFluid/Fluid/xcode/Info.plist
 c0000000052A9E3590000000000000462
 t1386865497
 s1122
 
-CBuild AST from /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp
+N/Users/Tellart/cinderFluid/Fluid/xcode/Particle.cpp
+c0000000052AE58460000000000000950
+t1387157574
+s2384
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp
+c0000000052B482CC00000000000029D3
+t1387561676
+s10707
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp
+c0000000052B49EF50000000000000808
+t1387568885
+s2056
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Info.plist
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/MacOS/Fluid
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
+t2
+s0
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Fluid.LinkFileList
+c000000005315EE9D00000000000001B0
+t1393946269
+s432
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o
+t1393946275
+s1868236
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.o
+t1393946275
+s2090560
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.o
+t1393946274
+s252516
+
+N/Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.o
+t1393946274
+s127060
+
+N/var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch.pch
+t1393946273
+s65537120
+
+CBuild AST from /Users/Tellart/cinderFluid/Fluid/xcode/FluidApp.cpp
+r0
+
+CBuild AST from /Users/Tellart/cinderFluid/Fluid/xcode/Particle.cpp
+r0
+
+CBuild AST from /Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp
+r0
+
+CBuild AST from /Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp
 r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesf3541ff81a5ab841^bd5438f81a5ab841^---0#1#0#--18"Check dependencies36"28F92373-4DFF-48B7-8F7D-2A4FE6F9A43B-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencieseeb07d1d26c6b841^72a6851d26c6b841^---0#1#1#--18"Check dependencies36"495A744D-7D58-49FF-9758-B22978137B31-
 
-CCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s408558343.732608
-e408558345.942558
+CCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o /Users/Tellart/cinderFluid/Fluid/xcode/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415639073.598214
+e415639075.035185
 r1
 xCompileC
 x./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o
-x/Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp
+x/Users/Tellart/cinderFluid/Fluid/xcode/FluidApp.cpp
 xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp21afbb071b5ab841^a758f1091b5ab841^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp0000000000000000^2694"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o ../src/FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/include -I../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -include /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch -MMD -MT dependencies -MF /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.d --serialize-diagnostics /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.dia -c /Users/Tellart/cinderFluid/Fluid/xcode/../src/FluidApp.cpp -o /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o36"10A638D3-C988-486F-AA3A-03FB59BE8917-
+d/Users/Tellart/cinderFluid/Fluid/xcode/FluidApp.cpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/AppNative.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/params/Params.h
+d/Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.h
+d/Users/Tellart/cinderFluid/Fluid/xcode/Particle.h
+d/Users/Tellart/cinderFluid/Fluid/xcode/Spring.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Users/Tellart/cinderFluid/Fluid/xcode/FluidApp.cpp150"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler4435992126c6b841^40bd112326c6b841^---0#0#1#-19%DVTDocumentLocation2@58"file:///Users/Tellart/cinderFluid/Fluid/xcode/FluidApp.cpp0000000000000000^2764"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o FluidApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/include -I../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -include /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch -MMD -MT dependencies -MF /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.d --serialize-diagnostics /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.dia -c /Users/Tellart/cinderFluid/Fluid/xcode/FluidApp.cpp -o /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/FluidApp.o36"FD961A5E-5B12-4188-A869-ECA0F5573C39-
+bCCE5F5D6-1FFF-45AD-8FB8-D47945913971
 
-CCpResource ../resources/CinderApp.icns ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
-s408558328.266046
-e408558328.277895
+CCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.o /Users/Tellart/cinderFluid/Fluid/xcode/Particle.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415639073.598517
+e415639075.202366
+r1
+xCompileC
+x./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.o
+x/Users/Tellart/cinderFluid/Fluid/xcode/Particle.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tellart/cinderFluid/Fluid/xcode/Particle.cpp
+d/Users/Tellart/cinderFluid/Fluid/xcode/Particle.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Rand.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Users/Tellart/cinderFluid/Fluid/xcode/Particle.cpp150"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.o Particle.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler5f46992126c6b841^9ed0332326c6b841^---0#0#1#-19%DVTDocumentLocation2@58"file:///Users/Tellart/cinderFluid/Fluid/xcode/Particle.cpp0000000000000000^2764"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.o Particle.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/include -I../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -include /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch -MMD -MT dependencies -MF /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.d --serialize-diagnostics /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.dia -c /Users/Tellart/cinderFluid/Fluid/xcode/Particle.cpp -o /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Particle.o36"1671FCF8-3EE5-48D7-BDAE-86BA163039C0-
+bCCE5F5D6-1FFF-45AD-8FB8-D47945913971
+
+CCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.o /Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415639073.598352
+e415639074.873363
+r1
+xCompileC
+x./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.o
+x/Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp
+d/Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.h
+d/Users/Tellart/cinderFluid/Fluid/xcode/Particle.h
+d/Users/Tellart/cinderFluid/Fluid/xcode/Spring.h
+o/Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp:208:23: warning: unused variable 'itB' [-Wunused-variable]
+o            Particle *itB = &*p2;
+o                      ^
+o/Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp:205:19: warning: unused variable 'itA' [-Wunused-variable]
+o        Particle *itA = &*p1;
+o                  ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp170"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.o ParticleController.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler9e3f992126c6b841^9295df2226c6b841^-372"/Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp:208:23: warning: unused variable 'itB' [-Wunused-variable]            Particle *itB = &*p2;                      ^/Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp:205:19: warning: unused variable 'itA' [-Wunused-variable]        Particle *itA = &*p1;                  ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@21"Unused variable 'itB'-415639074#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@68"file:///Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp0000000000000000^207#22#207#22#7340#0#19"Unused Entity Issue--2@21"Unused variable 'itA'-415639074#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp0000000000000000^204#18#204#18#7218#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@68"file:///Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp0000000000000000^2824"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.o ParticleController.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/include -I../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -include /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch -MMD -MT dependencies -MF /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.d --serialize-diagnostics /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.dia -c /Users/Tellart/cinderFluid/Fluid/xcode/ParticleController.cpp -o /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/ParticleController.o36"FFDBA32A-80EC-4710-8BE1-78263CF14E65-
+bCCE5F5D6-1FFF-45AD-8FB8-D47945913971
+
+CCompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.o /Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415639073.598714
+e415639074.813295
+r1
+xCompileC
+x./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.o
+x/Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp
+d/Users/Tellart/cinderFluid/Fluid/xcode/Spring.h
+d/Users/Tellart/cinderFluid/Fluid/xcode/Particle.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Rand.h
+o/Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp:43:11: warning: unused variable 'dirLengthSqrd' [-Wunused-variable]
+o    float dirLengthSqrd = dir.lengthSquared();
+o          ^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp146"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.o Spring.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilere65d992126c6b841^c633d02226c6b841^-198"/Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp:43:11: warning: unused variable 'dirLengthSqrd' [-Wunused-variable]    float dirLengthSqrd = dir.lengthSquared();          ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@31"Unused variable 'dirLengthSqrd'-415639074#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@56"file:///Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp0000000000000000^42#10#42#10#866#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@56"file:///Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp0000000000000000^2752"CompileC ./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.o Spring.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/include -I../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -include /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch -MMD -MT dependencies -MF /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.d --serialize-diagnostics /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.dia -c /Users/Tellart/cinderFluid/Fluid/xcode/Spring.cpp -o /Users/Tellart/cinderFluid/Fluid/xcode/build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Spring.o36"E5507962-A60D-4574-8629-53322B1EBA89-
+bCCE5F5D6-1FFF-45AD-8FB8-D47945913971
+
+CCpResource /Users/Tellart/cinderFluid/Fluid/resources/CinderApp.icns build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
+s415639069.530163
+e415639069.531496
 r1
 xCpResource
-x../resources/CinderApp.icns
-x./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns66fa45f81a5ab841^fb2447f81a5ab841^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns000000000080d041^404"CpResource ../resources/CinderApp.icns ./build/Debug/Fluid.app/Contents/Resources/CinderApp.icns    cd /Users/Tellart/cinderFluid/Fluid/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Tellart/cinderFluid/Fluid/xcode/../resources/CinderApp.icns /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Resources36"274169B1-BA6E-44B5-A8C9-67348BDE21DE-
+x/Users/Tellart/cinderFluid/Fluid/resources/CinderApp.icns
+xbuild/Debug/Fluid.app/Contents/Resources/CinderApp.icns
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Debug/Fluid.app/Contents/Resources/CinderApp.icns124"CpResource /Users/Tellart/cinderFluid/Fluid/resources/CinderApp.icns build/Debug/Fluid.app/Contents/Resources/CinderApp.icns37c5871d26c6b841^c710881d26c6b841^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Resources/CinderApp.icns00349c85ddffdf42^421"CpResource /Users/Tellart/cinderFluid/Fluid/resources/CinderApp.icns build/Debug/Fluid.app/Contents/Resources/CinderApp.icns    cd /Users/Tellart/cinderFluid/Fluid/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Tellart/cinderFluid/Fluid/resources/CinderApp.icns /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Resources36"478FFDDD-8405-41CE-B3EF-D0A49E620D37-
+bCCE5F5D6-1FFF-45AD-8FB8-D47945913971
 
 CLd /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386
-s408558345.950275
-e408558350.012538
-r1
+s415639075.204459
+e415639075.211933
+r0
 xLd
 x/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid
 xnormal
 xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Link /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid5661f3091b5ab841^5936030e1b5ab841^---0#0#0#--953"Ld ./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -filelist /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Fluid.LinkFileList -mmacosx-version-min=10.7 -dead_strip ../../../Downloads/cinder_0.8.5_mac/lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework CoreVideo -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid36"33907763-1C03-4CE6-9993-E75A5D899963-
+oclang: error: no such file or directory: '../../../Downloads/cinder_0.8.5_mac/lib/libcinder_d.a'
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Link /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid59"Ld ./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i3869964342326c6b841^2443362326c6b841^-97"clang: error: no such file or directory: '../../../Downloads/cinder_0.8.5_mac/lib/libcinder_d.a'1(21%IDEActivityLogMessage2@82"No such file or directory: '../../../Downloads/cinder_0.8.5_mac/lib/libcinder_d.a'-415639075#0#97#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--0#0#1#--1111"Ld ./build/Debug/Fluid.app/Contents/MacOS/Fluid normal i386    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug -filelist /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Fluid.LinkFileList -mmacosx-version-min=10.7 -dead_strip ../../../Downloads/cinder_0.8.5_mac/lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework CoreVideo -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -Xlinker -dependency_info -Xlinker /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Objects-normal/i386/Fluid_dependency_info.dat -o /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/MacOS/Fluid36"3A561C84-5F3A-46EF-AF27-9818BCF01B2C-
+bCCE5F5D6-1FFF-45AD-8FB8-D47945913971
 
-CProcessInfoPlistFile /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist Info.plist
-s408558328.236815
-e408558328.241667
+CProcessInfoPlistFile /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Info.plist /Users/Tellart/cinderFluid/Fluid/xcode/Info.plist
+s415639069.526067
+e415639069.529659
 r1
 xProcessInfoPlistFile
-x/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist
-xInfo.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist26c43cf81a5ab841^f2d23df81a5ab841^---0#0#0#-19%DVTDocumentLocation2@65"file://localhost/Users/Tellart/cinderFluid/Fluid/xcode/Info.plist0000000000000000^378"ProcessInfoPlistFile ./build/Debug/Fluid.app/Contents/Info.plist Info.plist    cd /Users/Tellart/cinderFluid/Fluid/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app/Contents/Info.plist36"B43B0534-61A4-48E9-B9A2-0D7CF60FA1C7-
+x/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Info.plist
+x/Users/Tellart/cinderFluid/Fluid/xcode/Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Process /Users/Tellart/cinderFluid/Fluid/xcode/Info.plist73"ProcessInfoPlistFile build/Debug/Fluid.app/Contents/Info.plist Info.plistaaf1861d26c6b841^3aeb871d26c6b841^---0#0#1#-19%DVTDocumentLocation2@56"file:///Users/Tellart/cinderFluid/Fluid/xcode/Info.plist0000000000000000^411"ProcessInfoPlistFile build/Debug/Fluid.app/Contents/Info.plist Info.plist    cd /Users/Tellart/cinderFluid/Fluid/xcode    builtin-infoPlistUtility /Users/Tellart/cinderFluid/Fluid/xcode/Info.plist -genpkginfo /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/Fluid.app/Contents/Info.plist36"1099DBE2-F37A-4F7A-814A-07A7E93F7330-
+bCCE5F5D6-1FFF-45AD-8FB8-D47945913971
 
-CProcessPCH++ /Users/Tellart/Library/Developer/Xcode/DerivedData/Fluid-emjstcrpuaskroespvwugurdkxuq/Index/PrecompiledHeaders/Fluid_Prefix-ersgoqlutgnwnteouopidhhgqysy_ast/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+CProcessPCH++ /Users/Tellart/Library/Developer/Xcode/DerivedData/Fluid-emjstcrpuaskroespvwugurdkxuq/Index/PrecompiledHeaders/Fluid_Prefix-bwqyplwdgcmeokbvjmjkcghkloee_ast/Fluid_Prefix.pch.pch Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
-CProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s408558328.286013
-e408558343.724878
+CProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch.pch Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s415639069.532018
+e415639073.596015
 r1
 xProcessPCH++
-x/var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth
+x/var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch.pch
 xFluid_Prefix.pch
 xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection27"Precompile Fluid_Prefix.pch2f6c49f81a5ab841^f390b9071b5ab841^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/Tellart/cinderFluid/Fluid/xcode/Fluid_Prefix.pch0000000000000000^2768"ProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/include -I../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug --serialize-diagnostics /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.dia -c /Users/Tellart/cinderFluid/Fluid/xcode/Fluid_Prefix.pch -o /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluid_Prefix-dguunrzirrqjsoasokxlqtymqaxw/Fluid_Prefix.pch.d36"9EB3B995-B0E3-4CCB-8539-CA0A561D4064-
+d/Users/Tellart/cinderFluid/Fluid/xcode/Fluid_Prefix.pch
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Cinder.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/version.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/checked_delete.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/AppBasic.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/App.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/Renderer.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/gl/gl.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Exception.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Quaternion.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/CinderMath.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Vector.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Matrix.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Matrix22.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/MatrixAffine2.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Matrix33.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Matrix44.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/MatrixAlgo.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Color.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/ChanTraits.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Rect.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Area.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Font.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Shape2d.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Path2d.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/BSpline.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/DataSource.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Url.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Stream.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Buffer.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Filesystem.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/filesystem.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/filesystem/config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/user.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/select_compiler_config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/compiler/clang.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/select_stdlib_config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/no_tr1/utility.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/stdlib/libcpp.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/select_platform_config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/platform/macos.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/posix_features.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/suffix.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/system/api_config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/workaround.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/auto_link.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/filesystem/path.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/filesystem/path_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/enable_if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_array.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/bool_trait_def.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/template_arity_spec.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/int.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/int_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/adl_barrier.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/adl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/msvc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/intel.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/gcc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/workaround.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/nttp_decl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/nttp.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/integral_wrapper.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/integral_c_tag.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/static_constant.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/static_cast.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/cat.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/config/config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/template_arity_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessor/params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/preprocessor.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/comma_if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/punctuation/comma_if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/control/if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/control/iif.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/logical/bool.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/facilities/empty.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/punctuation/comma.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repeat.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/repeat.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/debug/error.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/detail/auto_rec.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/tuple/eat.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/inc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/arithmetic/inc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/lambda.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/ttp.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/ctps.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/overload_resolution.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/integral_constant.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/bool.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/bool_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/integral_c.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/integral_c_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/lambda_support.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/bool_trait_undef.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/decay.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_function.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_reference.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_lvalue_reference.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_rvalue_reference.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/ice.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/yes_no_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/ice_or.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/ice_and.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/ice_not.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/ice_eq.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/false_result.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/is_function_ptr_helper.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/remove_bounds.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/type_trait_def.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/type_trait_undef.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/add_pointer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/remove_reference.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/broken_compiler_spec.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/eval_if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/value_wknd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/integral.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/eti.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/na_spec.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/lambda_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/void_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/na.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/na_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/lambda_arity_param.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/arity.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/dtp.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessor/enum.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessor/def_params_tail.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/limits/arity.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/logical/and.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/logical/bitand.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/identity.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/facilities/identity.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/empty.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/arithmetic/add.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/arithmetic/dec.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/control/while.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/list/fold_left.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/list/detail/fold_left.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/control/expr_iif.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/list/adt.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/detail/is_binary.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/detail/check.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/logical/compl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/list/fold_right.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/list/detail/fold_right.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/list/reverse.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/control/detail/while.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/tuple/elem.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/facilities/overload.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/variadic/size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/tuple/rem.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/variadic/elem.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/arithmetic/sub.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/identity.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/system/error_code.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/system/config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/cstdint.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/assert.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/current_function.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/operators.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/noncopyable.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/cerrno.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/abi_prefix.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/abi_suffix.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/system/system_error.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/iterator_facade.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/interoperable.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/or.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/use_preprocessed.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/nested_type_wknd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/include_preprocessed.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/compiler.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/stringize.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/or.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_convertible.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/intrinsics.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_same.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_volatile.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/cv_traits_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_abstract.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/detail/config_def.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/detail/config_undef.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/iterator_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/detail/facade_iterator_category.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/iterator_categories.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/placeholders.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/arg.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/arg_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/na_assert.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/assert.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/not.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/yes_no.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/arrays.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/pp_counter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/arity_spec.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/arg_typedef.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/arg.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/static_assert.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/and.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/and.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_const.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/indirect_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_pointer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_member_pointer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_member_function_pointer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/remove_cv.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_class.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/remove_pointer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/detail/enable_if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/addressof.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/add_const.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/remove_const.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_pod.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_void.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_scalar.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_arithmetic.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_integral.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_float.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_enum.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/always.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/apply.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/apply_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/apply_wrap.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/has_apply.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/has_xxx.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/type_wrapper.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/has_xxx.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/msvc_typename.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/array/elem.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/array/data.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/array/size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/enum_params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/enum_trailing_params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/has_apply.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/msvc_never_true.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/lambda.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/bind.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/bind_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/bind.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/next.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/next_prior.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/common_name_wknd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/protect.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/bind.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/full_lambda.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/quote.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/void.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/has_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/bcc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/quote.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/template_arity.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/apply.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/shared_ptr.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/shared_ptr.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/no_tr1/memory.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/throw_exception.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/shared_count.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/bad_weak_ptr.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/sp_counted_base.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/sp_has_sync.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/sp_typeinfo.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/sp_counted_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/sp_convertible.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/sp_nullptr_t.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/spinlock_pool.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/spinlock.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/spinlock_sync.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/yield_k.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/memory_order.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/detail/operator_bool.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/io/detail/quoted_manip.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/io/ios_state.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/io_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/functional/hash_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/functional/hash/hash_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/filesystem/operations.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/scoped_enum_emulation.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/bitmask.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/filesystem/convenience.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/concepts.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/categories.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/default_arg.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/ios.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/config/wide_streams.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/positioning.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/integer_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/limits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/config/codecvt.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/config/fpos.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/config/disable_warnings.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/config/enable_warnings.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/stream.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/constants.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/char_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/config/overload_resolution.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/config/gcc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/forward.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/config/limits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/push_params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/enum_binary_params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/repeat_from_to.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/iostream.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/select.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_base_and_derived.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/stream_buffer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/streambuf/direct_streambuf.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/error.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/execute.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/iteration/local.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/slot/slot.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/slot/detail/def.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/result_of.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/iteration/iterate.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/enum_shifted_params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/facilities/intercept.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/declval.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/add_rvalue_reference.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/iteration/detail/iter/forward1.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/iteration/detail/bounds/lower1.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/slot/detail/shared.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/iteration/detail/bounds/upper1.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/detail/result_of_iterate.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/iteration/detail/local.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/functional.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/close.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/flush.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/dispatch.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/bool_trait_def.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/template_params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/control/expr_if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/is_iterator_range.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/select_by_size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/wrap_unwrap.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/enable_if_stream.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/traits_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/ref.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/iterator_range.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/iterator_range_core.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/functions.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/begin.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/mutable_iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/detail/extract_optional_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/const_iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/end.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/detail/implementation_help.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/detail/common.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/detail/sfinae.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/size_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/difference_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/make_unsigned.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_signed.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_unsigned.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/add_volatile.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/distance.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/empty.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/rbegin.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/reverse_iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/reverse_iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/next_prior.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/iterator_adaptor.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/add_reference.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/rend.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/algorithm/equal.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/concepts.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/concept_check.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/concept/assert.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/concept/detail/general.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/concept/detail/backward_compatibility.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/concept/detail/has_constraints.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/conversion_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/concept/usage.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/concept/detail/concept_def.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/for_each_i.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/for.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/detail/for.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/seq.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/elem.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/enum.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/concept/detail/concept_undef.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iterator/iterator_concepts.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/value_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/detail/misc_concept.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/detail/safe_bool.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/range/iterator_range_io.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/streambuf.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/operations_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/adapter/non_blocking_adapter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/read.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/char_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/seek.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/write.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/optional.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/aligned_storage.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/aligned_storage.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/alignment_of.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/size_t_trait_def.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/size_t.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/size_t_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/detail/size_t_trait_undef.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/type_with_alignment.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/list/for_each_i.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/tuple/to_list.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/list/transform.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/list/append.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/streambuf/linked_streambuf.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/operations.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/imbue.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/input_sequence.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/optimal_buffer_size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/output_sequence.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/streambuf/indirect_streambuf.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/adapter/concept_adapter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/call_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/config/unreachable_return.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/device/null.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/buffer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/checked_operations.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/get.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/put.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/double_object.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/call_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/call_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/push.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/adapter/range_adapter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/pipeline.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/resolve.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/is_incrementable.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/adapter/mode_adapter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/adapter/output_iterator_adapter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/detail/is_dereferenceable.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/iostreams/device/array.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/base_from_member.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/PolyLine.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/AxisAlignedBox.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Ray.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Surface.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Channel.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/logic/tribool.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/logic/tribool_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Display.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Function.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/deconstruct.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/deconstruct_ptr.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/postconstructible.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/predestructible.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/dummy_mutex.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/last_value.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/optional.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/optional/optional.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/has_nothrow_constructor.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/has_trivial_constructor.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/reference_content.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/has_nothrow_copy.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/has_trivial_copy.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/none.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/none_t.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/swap.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/compare_pointees.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/in_place_factory.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/detail/in_place_factory_prefix.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/punctuation/paren.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/enum.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/utility/detail/in_place_factory_suffix.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/optional/optional_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/expired_slot.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/signal.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/function.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/iterate.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/function/detail/prologue.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/config/no_tr1/functional.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/function/function_base.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/integer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/integer_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/has_trivial_destructor.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/composite_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_union.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/function_equal.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/function/function_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mem_fn.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/mem_fn.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/get_pointer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/mem_fn_template.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/mem_fn_cc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/enum.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/enum_params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/function/detail/function_iterate.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/function/detail/maybe_include.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/function/function_template.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/no_exceptions_support.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/connection.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/null_output_iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/function_output_iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/unique_lock.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/slot.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/bind.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/is_placeholder.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/arg.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/visit_each.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/storage.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/bind_template.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/bind_cc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/bind_mf_cc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/bind_mf2_cc.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/bind/placeholders.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/signals_common.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/signal_base.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_base_of.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/signals_common_macros.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/tracked_objects_visitor.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/slot_base.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/any.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/weak_ptr.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/weak_ptr.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/foreign_ptr.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/scoped_ptr.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/smart_ptr/scoped_ptr.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/apply_visitor.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/apply_visitor_unary.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/generic_result_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/apply_visitor_binary.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/apply_visitor_delayed.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/variant.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/variant_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/blank_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/enum_shifted_params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/limits/list.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/substitute_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/backup_holder.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/enable_recursive_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/forced_return.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/initializer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/recursive_wrapper_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/move.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/iter_fold.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/begin_end.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/begin_end_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/begin_end_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/sequence_tag_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/has_begin.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/traits_lambda_spec.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/sequence_tag.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/has_tag.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/is_msvc_eti_arg.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/O1_size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/O1_size_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/O1_size_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/long.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/long_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/has_size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/forwarding.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/iter_fold_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/deref.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/msvc_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/pair.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/msvc_eti_base.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/make_variant_list.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/list20.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/list10.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/list0.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/push_front.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/push_front_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/item.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/tag.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/pop_front.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/pop_front_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/push_back.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/push_back_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/front.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/front_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/clear.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/clear_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/O1_size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/size.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/size_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/empty.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/empty_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/begin_end.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/iterator_tags.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/lambda_spec.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/include_preprocessed.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/preprocessed/plain/list10.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/list/aux_/preprocessed/plain/list20.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/list.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/over_sequence.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/visitation_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/cast_storage.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/has_nothrow_move.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/has_trivial_move.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/has_trivial_assign.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/bool_trait_def.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/bool_trait_undef.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/has_nothrow_assign.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/hash_variant.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/static_visitor.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/blank.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/templated_streams.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_empty.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/is_stateless.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/math/common_factor_ct.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/math_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/empty.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/empty_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/find_if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/find_if_pred.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/iter_apply.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/iter_fold_if.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/logical.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/iter_fold_if_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/fold.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/fold_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/front.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/front_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/is_sequence.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/iterator_range.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/max_element.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/less.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/comparison_op.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/numeric_op.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/numeric_cast.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/tag.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/numeric_cast_utils.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/less.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/push_front.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/push_front_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/same_as.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/sizeof.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/transform.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/reverse_fold.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/reverse_fold_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/pair_view.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/iterator_category.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/advance.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/advance_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/negate.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/advance_forward.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/advance_forward.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/advance_backward.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/prior.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessed/gcc/advance_backward.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/distance.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/distance_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/min_max.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/inserter_algorithm.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/back_inserter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/push_back.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/push_back_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/inserter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/front_inserter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/clear.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/clear_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/preprocessor/default_params.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/variant/detail/variant_io.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/trackable.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/variadic_slot.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/variadic_arg_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/slot_template.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/replace_slot_function.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/result_type_wrapper.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/slot_groups.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/slot_call_iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/auto_buffer.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/multi_index/detail/scope_guard.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/swap.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/optional_last_value.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/mutex.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/lwm_pthreads.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/variadic_signal.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/variadic_slot_invoker.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/type_traits/function_traits.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/detail/signal_template.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/signal_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/parameters.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/detail/is_xxx.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/enum_shifted.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/arg_list.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/void.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/result_of0.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/default.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/parameter_requirements.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/yesno.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/is_maybe.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/config.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/begin.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/end.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/unwrap_cv_reference.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/tagged_argument.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/tag.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/template_keyword.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/set.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/insert.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/insert_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/insert_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/set0.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/at_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/at_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/has_key_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/tag.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/has_key_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/overload_names.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/ptr_to_ref.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/config/operators.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/clear_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/set0.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/size_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/empty_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/insert_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/item.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/base.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/erase_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/erase_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/erase_key_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/erase_key_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/key_type_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/key_type_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/value_type_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/value_type_fwd.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/begin_end_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/set/aux_/iterator.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/has_key.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/mpl/aux_/has_key_impl.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/overloads.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/keyword.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/binding.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/value_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/macros.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/match.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/name.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/preprocessor.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/parenthesized_type.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/cast.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/preprocessor/flatten.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/for_each.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/selection/max.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/comparison/less_equal.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/logical/not.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/enum_trailing.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/parameter/aux_/preprocessor/for_each.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/detail/split.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/facilities/is_empty.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/for.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/repetition/deduce_r.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/comparison/equal.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/comparison/not_equal.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/first_n.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/detail/split.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/for_each_product.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/fold_left.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/seq/push_back.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/preprocessor/detail/is_nullary.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/boost/boost/signals2/shared_connection_block.hpp
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/Window.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/MouseEvent.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/Event.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/TouchEvent.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/KeyEvent.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/app/FileDropEvent.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Timer.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/Thread.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/cocoa/CinderCocoa.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/ImageIo.h
+d/Users/Tellart/Downloads/cinder_0.8.5_mac/include/cinder/DataTarget.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection27"Precompile Fluid_Prefix.pch270"ProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch.pch Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler0648881d26c6b841^3596982126c6b841^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/Tellart/cinderFluid/Fluid/xcode/Fluid_Prefix.pch0000000000000000^2926"ProcessPCH++ /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch.pch Fluid_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Tellart/cinderFluid/Fluid/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-generated-files.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-own-target-headers.hmap -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-all-target-headers.hmap -iquote /Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/Fluid-project-headers.hmap -iquote../../../Downloads/cinder_0.8.5_mac/include -iquote../include -I/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug/include -I../../../Downloads/cinder_0.8.5_mac/boost -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources/i386 -I/Users/Tellart/cinderFluid/Fluid/xcode/./build/Fluid.build/Debug/Fluid.build/DerivedSources -F/Users/Tellart/cinderFluid/Fluid/xcode/build/Debug --serialize-diagnostics /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch.d -c /Users/Tellart/cinderFluid/Fluid/xcode/Fluid_Prefix.pch -o /var/folders/6z/y4__4j_s763_flsr9n5csnl80000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/Fluid_Prefix-cljuyrafcwbtrxcoisjzlixxutpo/Fluid_Prefix.pch.pch36"304C598A-D025-46AC-866C-AE83AA984659-
+bCCE5F5D6-1FFF-45AD-8FB8-D47945913971
 
 CTouch /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app
-s408558350.021071
-e408558350.133624
-r1
-xTouch
-x/Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Touch /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app5b7d050e1b5ab841^4c36220e1b5ab841^---0#0#0#--161"Touch ./build/Debug/Fluid.app    cd /Users/Tellart/cinderFluid/Fluid/xcode    /usr/bin/touch -c /Users/Tellart/cinderFluid/Fluid/xcode/./build/Debug/Fluid.app36"DA85B8C3-8C60-4CA3-9411-3C340FB39F39-
+r0
 
